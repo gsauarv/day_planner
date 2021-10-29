@@ -1,10 +1,13 @@
 import Link from "next/link";
-const Options = () => {
+import styles from "./Options.module.css";
+const Options = ({ optionIcon }) => {
   return (
     <>
-      <Link>
-        <button></button>
-      </Link>
+      <div className={styles.options_container}>
+        <Link href="#">
+          <button className={styles.options_btn}>{optionIcon}</button>
+        </Link>
+      </div>
     </>
   );
 };

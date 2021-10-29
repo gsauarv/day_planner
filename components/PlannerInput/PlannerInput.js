@@ -1,4 +1,6 @@
+import Options from "../OptionsButtons/Options";
 import styles from "./PlannerInput.module.css";
+import { HiCalendar } from "react-icons/hi";
 const PlannerInput = () => {
   return (
     <div>
@@ -16,6 +18,7 @@ const PlannerInput = () => {
           type="text"
           className={styles.form_textarea}
         ></textarea>
+        <Options optionIcon={<HiCalendar />} />
       </form>
     </div>
   );
