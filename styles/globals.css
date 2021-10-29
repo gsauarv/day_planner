@@ -1,16 +1,50 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Chivo&display=swap');
+:root
+{
+
+  --primary_blue: #1F1D36;
+  --strong_green : #1E5128;
+  --secondary_green : #4E9F3D;
+  --secondary_gray : #D8E9A8;
+  --primary_black : #171717;
+  --gray:#B2B1B9;
+
+  --font_title: 40px;
+  --font_title_description:20px;
+
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+*{
+  margin:0px;
+  padding:0px;
+  font-family: 'Chivo',sans-serif;
+  background-color: var(--primary_blue);
 }
 
-* {
-  box-sizing: border-box;
+
+.container
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title_text
+{
+  padding-top: 2rem;
+  font-size: var(--font_title);
+  font-weight: bold;
+  letter-spacing: 0.01rem;
+  color: var(--secondary_gray);
+}
+
+.title_description_text {
+  padding-top: 10px;
+  font-size: var(--font_title_description);
+  font-weight: bold;
+  color: var( --gray);
+  letter-spacing: 0.01rem;
+  margin-bottom: 10px;
+
 }
